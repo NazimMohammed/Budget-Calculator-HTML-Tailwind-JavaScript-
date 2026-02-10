@@ -1,0 +1,30 @@
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 10px;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #3aff30a4;
+  border-radius: 2px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #22c538;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE + Edge */
+  scrollbar-width: none;     /* Firefox */
+}

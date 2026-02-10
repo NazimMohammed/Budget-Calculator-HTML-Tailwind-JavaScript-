@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget-Calulator-Portal</title>
+</head>
+<!-- googlefont cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+<style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
+        background-color: #0e0e0e;
+      }
+      .bento-card {
+        background: #ffffff;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid #e5e7eb;
+      }
+      .bento-card:hover {
+        border-color: #6366f1;
+        transform: scale(1.01);
+      }
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<body class="min-h-screen">
+    <div class="flex flex-col items-center justify-center mt-8  p-8">
+    <!-- backgroundSettings -->
+      <div class="fixed inset-0 overflow-hidden -z-10">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-lime-600/10 blur-[140px] rounded-full"></div>
+    </div>
+        
+        <!-- Header -->
+<nav class="fixed top-4 left-1/2 bg-zinc-900/60 md:bg-zinc-900/0 -translate-x-1/2 w-[95%] max-w-screen-xl z-50 transition-all duration-300">
+  <div class="glass-nav  px-6 py-3 flex items-center justify-between">
+    
+    <a href="#" class="flex items-center space-x-3 group">
+          <img src="./NZ.png" alt="" class="h-[50px] opacity-40">
+      <span class="text-2xl font-bold text-lime-500 tracking-tighter">Budget-Calculator</span>
+    </a>
+
+    <div class="hidden md:block">
+      <ul class="flex space-x-10 items-center text-xs">
+        <li>
+          <a href="#" class="text-sm font-bold text-white hover:text-blue-300 transition-colors uppercase tracking-widest relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-blue-300 after:transition-all hover:after:w-full">Home</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-bold text-white/70 hover:text-white transition-colors uppercase tracking-widest">About</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-bold text-white/70 hover:text-white transition-colors uppercase tracking-widest">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="md:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+       <div class="flex flex-col justify-center items-center text-4xl mt-19 md:mt-10 text-white font-bold my-10">
+        <h1 class="border text-xs rounded-full p-1 px-3 uppercase bg-white/10 my-3">Nazim-finance-solution</h1>
+        <!-- <h1 >Welcome to </h1> -->
+        <h1 class="text-lime-500 text-5xl text-center">Budget-Calculator</h1>
+        <p class="text-xs text-zinc-300 text-shadow-sm font-normal my-3 md:w-150 text-center">Our Budget Calculator helps you track income, manage expenses, and plan savings with ease. Enter your financial details to see where your money goes and make smarter, informed budgeting decisions in minutes.</p>
+       </div>
+
+   
+       <div class="grid grid-cols-1 md:grid-cols-10 gap-7 w-full md:w-230">
+
+         <!-- 1section -->
+        <div class="w-full h-auto col-span-1 md:col-span-5 rounded-3xl flex flex-col justify-center items-center p-10 bg-white/5 border border-zinc-100/10 hover:border-zinc-100/30 shadow-2xl">
+            <!-- <div class="bg-white/10  border border-zinc-100/20 shadow p-7 rounded-3xl"> -->
+                <i class="fa-solid fa-user  text-[50px] text-lime-500"></i>
+
+            <!-- </div> -->
+            <h1 class="text-center text-2xl font-bold text-white mt-6">Member Login</h1>
+            <!-- <h1 class="text-center text-zinc-200 text-xs my-3">Access your dashboard and transaction</h1> -->
+            <a href="./login.html"
+                class=" min-w-[100%] mt-5 my-2 text-center bg-lime-500 hover:scale-105 text-black py-4 rounded-2xl font-semibold transition-all duration-300">
+                Login <i class="fa-solid fa-right-to-bracket"></i>
+            </a>
+        </div>
+
+        <!-- 2-section -->
+           <div class="w-auto h-auto col-span-1 md:col-span-5 rounded-3xl bg-white/5  border  border-zinc-100/10 hover:border-zinc-100/30 flex flex-col justify-center items-center p-10">
+            
+          <!-- <div class="bg-white/10  border border-zinc-100/20 shadow p-7 rounded-3xl"> -->
+                <i class="fa-solid fa-user-pen  text-[50px] text-lime-500"></i>
+
+            <!-- </div> -->
+            <h1 class="text-center text-2xl font-bold text-white mt-5">New Account</h1>
+            <!-- <h1 class="text-center text-zinc-200 text-xs my-3">Create your own account in second.</h1> -->
+            <a href="./signup.html"
+                class=" block w-full mt-5 my-2 text-center border border-lime-500 hover:scale-105 text-lime-500 py-4 rounded-2xl font-semibold transition-all duration-300 ">
+                Register <i class="fa-solid fa-right-to-bracket"></i>
+            </a>
+        </div>
+       </div>
+      </div>
+      <!-- Footer -->
+       <div class="flex flex-col justify-center items-center">
+         <p class="text-center text-xs  text-zinc-200 ">
+           ©Powered by Nazim-Company
+          </p>
+       </div>
+
+       
+    </div>
+
+</body>
+
+</html>
